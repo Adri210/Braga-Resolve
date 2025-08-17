@@ -38,7 +38,7 @@ Clientes podem criar um perfil, postar os serviços que desejam contratar e rece
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/braga-resolve.git
+git clone https://github.com/Adri210/Braga-Resolve.git
 ```
 
 2. Entre na pasta do projeto:
