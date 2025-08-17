@@ -1,16 +1,65 @@
-# braga_resolve
+# Braga Resolve
 
-A new Flutter project.
+## Descrição
 
-## Getting Started
+**Braga Resolve** é um aplicativo desenvolvido em **Dart e Flutter** que conecta **prestadores de serviços** a clientes de forma prática e eficiente. Prestadores como encanadores, pintores, eletricistas e outros profissionais podem criar um perfil, apresentar seus serviços e receber solicitações de orçamento.
 
-This project is a starting point for a Flutter application.
+Clientes podem criar um perfil, postar os serviços que desejam contratar e receber propostas dos prestadores, escolhendo a oferta que melhor se adequa às suas necessidades. O aplicativo facilita a **contratação de serviços**, tornando o processo rápido, seguro e transparente.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Funcionalidades
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Para Prestadores de Serviços:
+
+* Criar perfil profissional com informações e serviços oferecidos.
+* Visualizar solicitações de serviços feitas por clientes.
+* Enviar orçamentos para os serviços desejados pelos clientes.
+* Receber notificações sobre propostas aceitas ou rejeitadas.
+
+### Para Clientes:
+
+* Criar perfil pessoal.
+* Postar serviços que desejam contratar.
+* Receber e comparar orçamentos enviados pelos prestadores.
+* Escolher o prestador que deseja contratar com base nas propostas recebidas.
+
+---
+
+## Tecnologias Utilizadas
+
+* **Linguagem:** Dart
+* **Framework:** Flutter
+
+---
+
+## Instalação e Execução
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/braga-resolve.git
+```
+
+2. Entre na pasta do projeto:
+
+```bash
+cd braga-resolve
+```
+
+3. Instale as dependências do Flutter:
+
+```bash
+flutter pub get
+```
+
+4. Execute o aplicativo em um dispositivo ou emulador:
+
+```bash
+flutter run
+```
+
+> Certifique-se de ter o Flutter instalado e configurado corretamente no seu ambiente de desenvolvimento.
+
+
+
