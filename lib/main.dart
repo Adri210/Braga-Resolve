@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:braga_resolve/ClienteScreen.dart';
-import 'package:braga_resolve/prestadorscreen.dart';
+import 'Screens/clientescreen.dart';
+import 'package:braga_resolve/Screens/prestadorscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,13 +25,14 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // TOPO COM IMAGEM NA APPBAR
+      
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60),
+        preferredSize: const Size.fromHeight(110),
         child: SizedBox(
           width: double.infinity,
+          height: 110,
           child: Image.asset(
-            "assets/images/logo_top.png", // imagem topo
+            "assets/images/logo_top.jpg", // imagem topo
             fit: BoxFit.cover,
           ),
         ),
@@ -46,7 +47,7 @@ class WelcomeScreen extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/images/logo.png',
-                height: 120,
+                height: 200,
               ),
               const SizedBox(height: 30),
               const Text(
@@ -126,12 +127,11 @@ class WelcomeScreen extends StatelessWidget {
         ),
       ),
 
-      // FOOTER COM IMAGEM
       bottomNavigationBar: SizedBox(
         width: double.infinity,
-        height: 60,
+        height: 110,
         child: Image.asset(
-          "assets/images/footer.png", // imagem rodapé
+          "assets/images/footer.jpg", 
           fit: BoxFit.cover,
         ),
       ),

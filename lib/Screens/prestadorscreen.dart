@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:braga_resolve/main.dart';
+import 'orcamentoscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: '',
-      home: const ClienteScreen(),
+      home: const Prestadorscreen(),
     );
   }
 }
 
-class ClienteScreen extends StatelessWidget {
-  const ClienteScreen({super.key});
+class Prestadorscreen extends StatelessWidget {
+  const Prestadorscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,7 @@ class ClienteScreen extends StatelessWidget {
     const double logoHeight = 60;
 
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           // Corpo
@@ -37,7 +39,7 @@ class ClienteScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 10),
                 const Text(
-                  'Entrar como Cliente',
+                  'Entrar como Prestador',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
@@ -82,7 +84,12 @@ class ClienteScreen extends StatelessWidget {
                 SizedBox(
                   height: 40,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Budget()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFFF2DB0D),
                       foregroundColor: Colors.black,
@@ -138,7 +145,7 @@ class ClienteScreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             height: topoHeight,
-            child: Image.asset("assets/images/logo_top.png", fit: BoxFit.cover),
+            child: Image.asset("assets/images/logo_top.jpg", fit: BoxFit.cover),
           ),
           // Seta de voltar
           Positioned(
@@ -170,8 +177,8 @@ class ClienteScreen extends StatelessWidget {
             right: 0,
             child: SizedBox(
               width: double.infinity,
-              height: 60,
-              child: Image.asset("assets/images/footer.png", fit: BoxFit.cover),
+              height: 110,
+              child: Image.asset("assets/images/footer.jpg", fit: BoxFit.cover),
             ),
           ),
         ],

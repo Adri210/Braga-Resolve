@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: '',
-      home: const Prestadorscreen(),
+      home: const ClienteScreen(),
     );
   }
 }
 
-class Prestadorscreen extends StatelessWidget {
-  const Prestadorscreen({super.key});
+class ClienteScreen extends StatelessWidget {
+  const ClienteScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +27,7 @@ class Prestadorscreen extends StatelessWidget {
     const double logoHeight = 60;
 
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           // Corpo
@@ -37,7 +38,7 @@ class Prestadorscreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 10),
                 const Text(
-                  'Entrar como Prestador',
+                  'Entrar como Cliente',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
@@ -138,7 +139,7 @@ class Prestadorscreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             height: topoHeight,
-            child: Image.asset("assets/images/logo_top.png", fit: BoxFit.cover),
+            child: Image.asset("assets/images/logo_top.jpg", fit: BoxFit.cover),
           ),
           // Seta de voltar
           Positioned(
@@ -170,8 +171,8 @@ class Prestadorscreen extends StatelessWidget {
             right: 0,
             child: SizedBox(
               width: double.infinity,
-              height: 60,
-              child: Image.asset("assets/images/footer.png", fit: BoxFit.cover),
+              height: 110,
+              child: Image.asset("assets/images/footer.jpg", fit: BoxFit.cover),
             ),
           ),
         ],
