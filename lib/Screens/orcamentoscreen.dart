@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Components/barra_navegacao.dart';
+import '../main.dart';
 
 class Budget extends StatefulWidget {
   const Budget({super.key});
@@ -30,7 +31,13 @@ class _BudgetState extends State<Budget> {
         surfaceTintColor: Colors.transparent,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.grey, size: 30.0),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(builder: (context) => const WelcomeScreen()),
+              (route) => false,
+            );
+          },
         ),
         actions: [
           IconButton(

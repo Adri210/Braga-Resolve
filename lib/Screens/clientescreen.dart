@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:braga_resolve/main.dart';
+import 'perfilscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -74,7 +75,12 @@ class ClienteScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const RootTabs()),
+                      );
+                    },
                     child: const Text('Esqueceu a senha?', style: TextStyle(color: Colors.black, fontSize: 12)),
                   ),
                 ),
@@ -83,7 +89,12 @@ class ClienteScreen extends StatelessWidget {
                 SizedBox(
                   height: 40,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const RootTabs()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFFF2DB0D),
                       foregroundColor: Colors.black,
